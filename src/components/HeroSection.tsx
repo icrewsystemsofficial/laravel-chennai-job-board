@@ -49,22 +49,15 @@ export const HeroSection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
+            <a href="#viewjobs">
+              <Button 
               size="lg" 
               className="bg-gradient-to-r from-primary to-primary-hover shadow-[var(--shadow-hero)] hover:shadow-[var(--shadow-hero)] transform hover:scale-105 transition-all duration-300"
             >
               Browse Jobs
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-primary/20 hover:bg-primary/5"
-            >
-              <Code2 className="mr-2 h-5 w-5" />
-              Post a Job
-            </Button>
+            </a>
           </div>
           
           {/* Location Highlights */}

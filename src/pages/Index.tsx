@@ -123,7 +123,7 @@ const Index = () => {
         />
 
         {/* Results Header */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+        <div id="viewjobs" className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
           <div>
             <h2 className="text-2xl font-semibold mb-2">
               {filteredJobs.length} Laravel Jobs Found
@@ -179,14 +179,27 @@ const Index = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="outline" className="flex items-center gap-2">
+            {/* <Button variant="outline" className="flex items-center gap-2">
               <MessageCircle className="h-4 w-4" />
               Join WhatsApp Group
-            </Button>
-            <Button variant="outline" className="flex items-center gap-2">
+            </Button> */}
+            <a href="https://github.com/laravelchennai">
+              <Button variant="outline" className="flex items-center gap-2">
               <Github className="h-4 w-4" />
               View on GitHub
-            </Button>
+            </Button></a>
+            <a href="https://discord.gg/jfybWcG2" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 127.14 96.36"
+                  className="h-4 w-4 fill-current"
+                >
+                  <path d="M107.7,8.07A105.15,105.15,0,0,0,81.53,0a72.06,72.06,0,0,0-3.36,6.91,97.68,97.68,0,0,0-29.2,0A72.37,72.37,0,0,0,45.61,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21A105.73,105.73,0,0,0,31.9,96.36a77.7,77.7,0,0,0,6.57-10.7,68.42,68.42,0,0,1-10.36-5c.87-.63,1.73-1.29,2.55-1.96A70.48,70.48,0,0,0,64,84.46a70.48,70.48,0,0,0,33.34-5.76c.83.68,1.69,1.33,2.55,1.96a68.93,68.93,0,0,1-10.38,5,77,77,0,0,0,6.58,10.7A105.63,105.63,0,0,0,126.6,80.2C129.24,53.16,122.09,29,107.7,8.07ZM42.45,65.69c-6.31,0-11.48-5.79-11.48-12.93s5.08-12.94,11.48-12.94S53.93,45.62,53.93,52.76,48.76,65.69,42.45,65.69Zm42.24,0c-6.31,0-11.48-5.79-11.48-12.93s5.08-12.94,11.48-12.94,11.48,5.79,11.48,12.94S91,65.69,84.69,65.69Z"/>
+                </svg>
+                Join Discord
+              </Button>
+            </a>
           </div>
           
           <div className="flex flex-wrap justify-center gap-2 mt-6">
