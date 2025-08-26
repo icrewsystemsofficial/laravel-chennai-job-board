@@ -80,7 +80,7 @@ export const SearchFilters = ({
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="all">All Types</SelectItem>
-            <SelectItem value="full-time">Full–time</SelectItem>
+            <SelectItem value="Full-time">Full–time</SelectItem>
             <SelectItem value="part-time">Part Time</SelectItem>
             <SelectItem value="contract">Contract</SelectItem>
             <SelectItem value="freelance">Freelance</SelectItem>
